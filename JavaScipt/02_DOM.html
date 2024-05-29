@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+<body>
+  <h1 id="main-heading">JavaScript</h1>
+  <h1 id="main-heading1"></h1>
+
+  <p class="test-1">html</p>
+  <p class="test-1">css</p>
+  <p class="test-1">js</p>
+
+  <script>
+    let selectedElement=document.getElementById('main-heading').innerText;
+    console.log(selectedElement);
+
+    document.getElementById('main-heading').innerText='Html-Css';
+    document.getElementById('main-heading1').innerHTML='Html-Css <span>JavaScript</span>';
+
+    let element=document.getElementsByClassName('test-1');
+    element[0].innerHTML='classMethod1';
+    element[1].innerHTML='classMethod2';
+    element[2].innerHTML='classMethod3';
+  </script>
+</body>
+</html>

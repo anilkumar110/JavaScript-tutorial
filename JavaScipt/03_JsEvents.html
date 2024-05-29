@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Js-Events</title>
+</head>
+<body>
+  <input type="number" id="number-1">
+  <input type="number" id="number-2">
+  <br> <br>
+  <button onclick="calculateSum()">Calculate Sum</button>
+  <p id="sum"></p>
+
+  <script>
+    function calculateSum()
+    {
+      let num1=Number(document.getElementById('number-1').value);
+      let num2=Number(document.getElementById('number-2').value);
+      let sum=num1+num2;
+      document.getElementById('sum').innerHtml=<h1>sum</h1>;
+    } 
+  </script>
+</body>
+</html>
